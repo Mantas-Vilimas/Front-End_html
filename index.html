@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forma</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <h1>Register to Fancy Form</h1>
+    <h2>All fields are <span>required</span> unless marked as "optional"</h2>
+
+    <form action="/9 Paskaita/index.html" method="POST">
+        
+        <label name="vartotojo-kodas" for="vartotojo-kodas">Your unique ID that you can't change</label>
+        <input id="vartotojo-kodas" type="text" readonly value="YBX0123">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="18" max="65" required>
+
+        <label for="about">Tell us a little about yourself <span>(optional):</span></label>
+        <textarea name="about" id="about"></textarea>
+
+        <input type="checkbox" name="terms" id="terms" required>
+        <label for="terms">I agree with Terms & Conditions</label>
+        
+        <input type="submit" value="Register">
+
+    </form>
+
 </body>
 </html>
