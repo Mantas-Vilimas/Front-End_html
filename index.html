@@ -8,32 +8,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Register to Fancy Form</h1>
-    <h2>All fields are <span>required</span> unless marked as "optional"</h2>
+    <header>
+        <h1>Register to Fancy Form</h1>
+    </header>
+    <Main>
+        <p>All fields are <span>required</span> unless marked as "optional"</p>
 
-    <form action="/9 Paskaita/index.html" method="POST">
-        
-        <label name="vartotojo-kodas" for="vartotojo-kodas">Your unique ID that you can't change</label>
-        <input id="vartotojo-kodas" type="text" readonly value="YBX0123">
+        <form action="/9 Paskaita/index.html" method="POST">
+            
+            <section>
+                <label name="vartotojo-kodas" for="vartotojo-kodas">Your unique ID that you can't change</label>
+                <input id="vartotojo-kodas" type="text" value="YBX0123" readonly>
+            </section>
+            <section>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </section>
+            <section>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            </section>
+            <section>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="18" max="65" required>
+            </section>
+            <Section>
+                <label for="about">Tell us a little about yourself <span>(optional):</span></label>
+                <textarea name="about" id="about"></textarea>
+            </Section>
+            <section>
+                <input type="checkbox" name="terms" id="terms" value="agree" required>
+                <label for="terms">I agree with Terms & Conditions</label>
+            </section>
+            <input type="submit" name="submit" value="Register">
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
-
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required>
-
-        <label for="age">Age:</label>
-        <input type="number" name="age" id="age" min="18" max="65" required>
-
-        <label for="about">Tell us a little about yourself <span>(optional):</span></label>
-        <textarea name="about" id="about"></textarea>
-
-        <input type="checkbox" name="terms" id="terms" required>
-        <label for="terms">I agree with Terms & Conditions</label>
-        
-        <input type="submit" value="Register">
-
-    </form>
-
+        </form>
+    </Main>
 </body>
 </html>
