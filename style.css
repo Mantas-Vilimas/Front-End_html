@@ -4,79 +4,89 @@
 
 body{
     margin: 0;
-    background-image: url(https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    background-position: center;
-}
-
-.wrapper{
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-main{
-    display: flex;
-    background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
+    background-color: rosybrown;
+}
+
+header div{
     display: flex;
-    background-color: yellowgreen;
     justify-content: space-between;
     align-items: center;
 }
 
-header img{
-    height: 90px;
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
 }
 
-header ul{
+header div ul{
     display: flex;
     list-style-type: none;
 }
-
-header ul li{
-    margin-left: 30px;
+header div img{
+    height: 25px;
 }
 
-li a{
-    text-decoration: none;
-    color: darkolivegreen;
-}
-
-article:first-child{
-    margin-right: 20px;
-}
-
-
-article img{
-    width: 40%;
-    float: left;
-    margin: 0px 20px 10px 0px;
-}
-
-article a{
-    background-color: yellowgreen;
+ul a{
     text-decoration: none;
     color: white;
-    padding: 10px;
-
 }
 
-div{
-    text-align: right;
-    margin-bottom: 15px;
+nav ul li:not(:last-child) {
+    margin-right: 30px;
 }
 
-footer{
-    text-align: center;
-    margin: 10px;
-    color: darkolivegreen;
+article img{
+    float: right;
+    width: 200px;
 }
 
-article p{
-    text-align: justify;
+
+main div:nth-child(odd){
+    background-color: rgb(185, 254, 255);
+}
+
+main div:not(:first-child){
+    border-bottom: 1px solid black;
+}
+
+h2{
+    margin-top: 0;
+    padding: 30px 0 30px 0;
+}
+
+h1{
+    padding: 10px 0 10px 0;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+
+article ul{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0;
+    width: 49%;
+}
+
+article ul li{
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    margin: 15px;
+}
+
+.photos{
+    display: flex;
+    justify-content: space-between;
+}
+
+article img{
+    border: 1px solid black;
+    border-radius: 50%;
+    max-width: 100px;
 }
