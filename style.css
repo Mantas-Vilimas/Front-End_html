@@ -24,9 +24,9 @@ header div ul{
     display: flex;
     list-style-type: none;
 }
+
 header div img{
-    height: 40px;
-    width: 40px;
+    width: 5%;
 }
 
 ul a{
@@ -43,11 +43,11 @@ article img{
     width: 300px;
 }
 
-main div:nth-child(odd){
+main section:nth-child(odd){
     background-color: rgb(228, 251, 252);
 }
 
-main div:not(:first-child){
+main section:not(:first-child){
     border-bottom: 1px solid black;
 }
 
@@ -57,6 +57,11 @@ h2{
 
 h1{
     padding: 20px 0 20px 0;
+}
+
+h1,
+h2{
+    margin: 0;
 }
 
 .list{
@@ -95,6 +100,6 @@ footer{
     text-align: center;
 }
 
-article.wrapper{
+section:not(:first-child){
     padding-bottom:50px ;
 }
