@@ -1,14 +1,12 @@
-*{
-    box-sizing: border-box;
-}
-
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+header, 
+footer{
     background-color: rosybrown;
+    padding: 10px 0;
 }
 
 header div{
@@ -18,7 +16,7 @@ header div{
 }
 
 .wrapper{
-    width: 800px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -27,7 +25,8 @@ header div ul{
     list-style-type: none;
 }
 header div img{
-    height: 25px;
+    height: 40px;
+    width: 40px;
 }
 
 ul a{
@@ -41,12 +40,11 @@ nav ul li:not(:last-child) {
 
 article img{
     float: right;
-    width: 200px;
+    width: 300px;
 }
 
-
 main div:nth-child(odd){
-    background-color: rgb(185, 254, 255);
+    background-color: rgb(228, 251, 252);
 }
 
 main div:not(:first-child){
@@ -54,12 +52,11 @@ main div:not(:first-child){
 }
 
 h2{
-    margin-top: 0;
-    padding: 30px 0 30px 0;
+    padding: 40px 0 20px 0;
 }
 
 h1{
-    padding: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
 }
 
 .list{
@@ -72,6 +69,7 @@ article ul{
     border-radius: 10px;
     padding: 0;
     width: 49%;
+    overflow-wrap: break-word;
 }
 
 article ul li{
@@ -83,10 +81,20 @@ article ul li{
 .photos{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 
-article img{
+.photos img{
     border: 1px solid black;
     border-radius: 50%;
     max-width: 100px;
+}
+
+footer{
+    text-align: center;
+}
+
+article.wrapper{
+    padding-bottom:50px ;
 }
