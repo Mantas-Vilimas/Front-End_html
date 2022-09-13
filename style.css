@@ -1,105 +1,142 @@
-body{
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+*{
+    box-sizing: border-box;
 }
 
-header, 
+header,
 footer{
-    background-color: rosybrown;
-    padding: 10px 0;
-}
-
-header div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgb(145, 57, 57);
+    color: white;
 }
 
 .wrapper{
     max-width: 960px;
     margin: 0 auto;
 }
-
-header div ul{
+header nav{
     display: flex;
-    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
 }
 
-header div img{
-    width: 5%;
+header img{
+    height: 50px;
 }
 
-ul a{
+header ul{
+    display: flex;
+    gap: 10px;
+}
+
+
+li{
+    list-style: none;
+}
+
+li a{
     text-decoration: none;
+    color: inherit;
+}
+
+header nav ul li:last-child a{
+    border: 1px solid white;
+    padding: 15px 5px;
+    border-radius: 5px;
+}
+
+.hero-image{
+background-image: url(https://alynas.lt/wp-content/uploads/2020/04/Hero_1.1.png);
+min-height: 200px;
+height: 50vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+h1 {
     color: white;
+    background-color: rgba(145, 57, 57, 0.7);
+    padding: 10px;
 }
 
-nav ul li:not(:last-child) {
-    margin-right: 30px;
-}
-
-article img{
-    float: right;
-    width: 300px;
-}
-
-main section:nth-child(odd){
-    background-color: rgb(228, 251, 252);
-}
-
-main section:not(:first-child){
-    border-bottom: 1px solid black;
-}
-
-h2{
-    padding: 40px 0 20px 0;
-}
-
-h1{
-    padding: 20px 0 20px 0;
-}
-
-h1,
-h2{
-    margin: 0;
-}
-
-.list{
+.hero-image .wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 200px;
+    height: 50vh;
 }
 
-article ul{
-    border: 1px solid grey;
-    border-radius: 10px;
-    padding: 0;
-    width: 49%;
-    overflow-wrap: break-word;
+.product-card{
+    background-color: rgba(145, 57, 57, 0.9);
+    color: white;
+    height: 300px;
+    width: calc(25% - 6px);
 }
 
-article ul li{
-    list-style-type: none;
-    border-bottom: 1px solid black;
-    margin: 15px;
+.product-card h3{
+    text-align: center;
 }
 
-.photos{
+.product-card img{
+    object-fit: scale-down;
+    height: 200px;
+}
+
+.product-card p{
+    margin-left: 8px;
+}
+
+.product-list{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 10px;
+    gap: 8px;
 }
 
-.photos img{
-    border: 1px solid black;
-    border-radius: 50%;
-    max-width: 100px;
+.contacts{
+    display: flex;
+    gap: 10px;
+}
+
+form{
+    flex: 1;
+}
+
+iframe{
+    flex: 1;
+}
+
+input{
+    width: 100%;
+}
+
+.form-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+button{
+    width: 25%;
+    border: 1px solid rgb(145, 57, 57);
+    background-color: white;
+    padding: 10px;
 }
 
 footer{
     text-align: center;
+    padding: 10px;
 }
 
-section:not(:first-child){
-    padding-bottom:50px ;
+article{
+    padding: 10px 0;
+}
+
+h2{
+    color: rgb(145, 57, 57);;
+}
+
+span{
+    color: rgb(99, 15, 0);
 }
