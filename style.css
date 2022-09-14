@@ -113,9 +113,14 @@ iframe{
     flex: 1;
 }
 
+iframe,
 input{
     width: 100%;
     min-width: 475px;
+}
+
+input{
+    padding: 10px;
 }
 
 .form-items{
