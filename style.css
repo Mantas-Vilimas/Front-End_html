@@ -4,96 +4,208 @@
 
 html, body{
     font-family: sans-serif;
-    background-color:rgb(60, 179, 113);
     margin: 0;
 }
 
-article{
-    background-color: white;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.layout{
+    display: grid;
+    grid-template-columns: 1fr minmax(340px, 1200px) 1fr;
+    padding: 0 20px;
 }
 
+.layout-header,
+.layout-footer{
+    background-color: #2e2e2e ;
+}
+
+.header,
+.main,
+.footer{
+    grid-column: 2;
+}
+
+h1,
 h2,
 h3,
-p,
-footer{
+p{
+    text-align: center;
     margin: 0;
 }
 
-article img{
-    object-fit: cover;
-    width: 100%;
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 50px;
+}
+
+.header__image{
+    grid-column: 2/3;
     height: 100%;
+    object-fit: cover;
+    text-align: center;
 }
 
-article footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header__navigation{
+    display: none;
 }
 
-.content-wrapper{
-    padding: 30px 20px 14px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+.main{
+    display: grid;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.content{
+    display: grid;
     gap: 20px;
 }
 
-.content-wrapper header,
-.content-wrapper footer{
-    flex-grow: 0;
+.article-list{
+    display: grid;
+    gap: 20px;
+    padding-bottom: 40px;
 }
 
-.content-wrapper p{
-    flex: 1;
+.article{
+    display: grid;
+    grid-template-rows: 10em auto auto;
+    gap: 20px;
 }
 
-article footer a,
-article p,
-article footer h3{
+.article__image{
+    height: 10em;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+
+.article__heading{
+    text-transform: uppercase;
+}
+
+.article__paragraph--strong{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form{
+    display: grid;
+    gap: 10px;
+}
+
+.form__input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 10px;
+}
+
+.form__radio{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-flow: column;
+}
+
+.form__input-radio{
+    display: block;
+    margin: 5px auto;
+}
+
+.form__label-radio--right{
+    grid-column: 5;
+    text-align: center
+}
+
+.form__label-radio--left{
+    grid-column: 2;
+    text-align: center
+}
+
+
+.form__input::placeholder{
+    font-size: 1em;
+}
+
+.form__button{
+    min-width: 30%;
+    justify-self: center;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.footer{
+    padding: 20px 0 10px 0;
+}
+
+.footer__block{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+}
+
+.footer__list{
+    padding: 0;
+}
+
+.footer__list-item{
+    list-style: none;
+}
+
+.footer__list-link{
     text-decoration: none;
-    color: gray;
+    color: white;
 }
 
-article footer h3{
-    font-size: 14px;
+.footer__list-link--important{
+    color: red;
 }
 
-main{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1050px;
-    margin: 0 auto;
-}
-
-.big-article,
-.small-article{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.article-img{
-    flex: 1;
-}
-
-.content-wrapper{
-    flex: 1;
-}
-
-@media screen and (min-width: 700px) {
-    main{
-        flex-wrap: nowrap;
+@media screen and (min-width:801px) {
+    .header__navigation{
+        display: block;
+        grid-column: 3;
     }
 
-    .small-article{
-    max-width: 35%;
+    .header__list{
+        display: flex;
+        justify-content: space-between;
     }
+
+    .header__list-item{
+        list-style: none;
+    }
+
+    .header__list-link{
+        color: white;
+        text-decoration: none;
+    }
+
+    .header__image{
+        grid-column: 1;
+        height: 100%;
+        object-fit: cover;
+        text-align: left;
+    }
+    
+    .article__image {
+        object-position:initial;
+    }
+
+    .article-list{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+    
+    .form{
+        min-width: 50%;
+        justify-self: center;
+    }
+    
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }

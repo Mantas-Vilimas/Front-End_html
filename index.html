@@ -4,157 +4,333 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <title>Grid Practice</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <main>
-      <div class="big-article">
-        <article>
-          <div class="article-img">
-            <picture>
-              <source
-                srcset="/images/webp/open.webp"
-                media="(min-width: 700px)"
-                type="image/webp"
-              />
-              <img src="/images/jpg/open-small.jpg" alt="open-sign" />
-            </picture>
+    <div class="layout layout-header">
+      <header class="header">
+        <!-- Jei neidedu i div, nesigauna per viduri -->
+        <div class="header__image">
+          <picture>
+            <source
+              srcset="/images/webp/table.webp"
+              media="(min-width: 801px)"
+              type="image/webp"
+            />
+            <source
+              srcset="/images/webp/table-small.webp"
+              media="(max-width: 800px)"
+              type="image/webp"
+            />
+            <img
+              class="header__image"
+              src="/images/jpg/table-small.jpg"
+              alt="logo"
+            />
+          </picture>
+        </div>
+
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Item</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Item</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Item</a>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">Item</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="layout layout-main">
+      <main class="main">
+        <h1>Page title</h1>
+        <h2>What we do</h2>
+        <div class="content">
+          <div class="article-list">
+            <article class="article">
+              <picture>
+                <source
+                  srcset="/images/webp/sign-red.webp"
+                  media="(min-width: 801px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/images/webp/sign-small.webp"
+                  media="(max-width: 800px)"
+                  type="image/webp"
+                />
+                <img
+                  class="article__image"
+                  src="/images/jpg/sign-small.jpg"
+                  alt="article-image"
+                />
+              </picture>
+
+              <h3 class="article__heading">any title will be uppercase</h3>
+              <p class="article__paragraph">
+                <span class="article__paragraph--strong">Photo</span> above is
+                10 em height. This paragraph can be of
+                <span class="article__paragraph--strong">any</span>height.
+              </p>
+            </article>
+
+            <article class="article">
+              <picture>
+                <source
+                  srcset="/images/webp/sign-red.webp"
+                  media="(min-width: 801px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/images/webp/sign-small.webp"
+                  media="(max-width: 800px)"
+                  type="image/webp"
+                />
+                <img
+                  class="article__image"
+                  src="/images/jpg/sign-small.jpg"
+                  alt="article-image"
+                />
+              </picture>
+
+              <h3 class="article__heading">any title will be uppercase</h3>
+              <p class="article__paragraph">
+                <span class="article__paragraph--strong">Photo</span> above is
+                10 em height. This paragraph can be of
+                <span class="article__paragraph--strong">any</span>height.
+              </p>
+            </article>
+
+            <article class="article">
+              <picture>
+                <source
+                  srcset="/images/webp/sign-red.webp"
+                  media="(min-width: 801px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/images/webp/sign-small.webp"
+                  media="(max-width: 800px)"
+                  type="image/webp"
+                />
+                <img
+                  class="article__image"
+                  src="/images/jpg/sign-small.jpg"
+                  alt="article-image"
+                />
+              </picture>
+
+              <h3 class="article__heading">any title will be uppercase</h3>
+              <p class="article__paragraph">
+                <span class="article__paragraph--strong">Photo</span> above is
+                10 em height. This paragraph can be of
+                <span class="article__paragraph--strong">any</span>height.
+              </p>
+            </article>
+
+            <article class="article">
+              <picture>
+                <source
+                  srcset="/images/webp/sign-red.webp"
+                  media="(min-width: 801px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/images/webp/sign-small.webp"
+                  media="(max-width: 800px)"
+                  type="image/webp"
+                />
+                <img
+                  class="article__image"
+                  src="/images/jpg/sign-small.jpg"
+                  alt="article-image"
+                />
+              </picture>
+
+              <h3 class="article__heading">any title will be uppercase</h3>
+              <p class="article__paragraph">
+                <span class="article__paragraph--strong">Photo</span> above is
+                10 em height. This paragraph can be of
+                <span class="article__paragraph--strong">any</span>height.
+              </p>
+            </article>
+
+            <article class="article">
+              <picture>
+                <source
+                  srcset="/images/webp/sign-red.webp"
+                  media="(min-width: 801px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/images/webp/sign-small.webp"
+                  media="(max-width: 800px)"
+                  type="image/webp"
+                />
+                <img
+                  class="article__image"
+                  src="/images/jpg/sign-small.jpg"
+                  alt="article-image"
+                />
+              </picture>
+
+              <h3 class="article__heading">any title will be uppercase</h3>
+              <p class="article__paragraph">
+                <span class="article__paragraph--strong">Photo</span> above is
+                10 em height. This paragraph can be of
+                <span class="article__paragraph--strong">any</span>height.
+              </p>
+            </article>
+
+            <article class="article">
+              <picture>
+                <source
+                  srcset="/images/webp/sign-red.webp"
+                  media="(min-width: 801px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/images/webp/sign-small.webp"
+                  media="(max-width: 800px)"
+                  type="image/webp"
+                />
+                <img
+                  class="article__image"
+                  src="/images/jpg/sign-small.jpg"
+                  alt="article-image"
+                />
+              </picture>
+
+              <h3 class="article__heading">any title will be uppercase</h3>
+              <p class="article__paragraph">
+                <span class="article__paragraph--strong">Photo</span> above is
+                10 em height. This paragraph can be of
+                <span class="article__paragraph--strong">any</span>height.
+              </p>
+            </article>
+
+            <article class="article">
+              <picture>
+                <source
+                  srcset="/images/webp/sign-red.webp"
+                  media="(min-width: 801px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/images/webp/sign-small.webp"
+                  media="(max-width: 800px)"
+                  type="image/webp"
+                />
+                <img
+                  class="article__image"
+                  src="/images/jpg/sign-small.jpg"
+                  alt="article-image"
+                />
+              </picture>
+
+              <h3 class="article__heading">any title will be uppercase</h3>
+              <p class="article__paragraph">
+                <span class="article__paragraph--strong">Photo</span> above is
+                10 em height. This paragraph can be of
+                <span class="article__paragraph--strong">any</span>height.
+              </p>
+            </article>
           </div>
 
-          <div class="content-wrapper">
-            <h2>Hello World</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              doloribus nostrum quae quis sit earum dicta, tempore ipsum itaque
-              nobis eligendi molestias magni nam laudantium provident voluptas
-              dolorem unde corrupti.
-            </p>
-            <footer>
-              <h3>By Joe Smith</h3>
-              <a href="#"> 42 comments</a>
-            </footer>
-          </div>
-        </article>
+          <form action="/index.html" method="GET" class="form">
+            <h2 class="form__heading">Contact Us</h2>
+            <input
+              class="form__input"
+              type="text"
+              name="style"
+              placeholder="There's no outline"
+            />
+            <input
+              class="form__input"
+              type="text"
+              name="size"
+              placeholder="Font-size is 1em"
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <div class="form__radio">
+              <label class="form__label-radio--left" for="flexbox"
+                >Flexbox
+                <input
+                  class="form__input-radio"
+                  type="radio"
+                  name="tool"
+                  id="flexbox"
+                />
+              </label>
 
-        <article>
-          <div class="article-img">
-            <picture>
-              <source
-                srcset="/images/webp/coffee.webp"
-                media="(min-width: 700px)"
-                type="image/webp"
-              />
-              <img src="/images/jpg/coffee-small.jpg" alt="coffee" />
-            </picture>
-          </div>
+              <label class="form__label-radio--right" for="grid"
+                >Grid
+                <input
+                  class="form__input-radio"
+                  type="radio"
+                  name="tool"
+                  id="grid"
+                />
+              </label>
+            </div>
 
-          <div class="content-wrapper">
-            <header>
-              <h2>Hello World</h2>
-            </header>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              doloribus nostrum quae quis sit earum dicta, tempore ipsum itaque
-              nobis eligendi molestias magni nam laudantium provident voluptas
-              dolorem unde corrupti.
-            </p>
-            <footer>
-              <h3>By Joe Smith</h3>
-              <a href="#"> 42 comments</a>
-            </footer>
-          </div>
-        </article>
-      </div>
+            <button class="form__button" type="submit">A button</button>
+          </form>
+        </div>
+      </main>
+    </div>
 
-      <div class="small-article">
-        <article>
-          <div class="article-img">
-            <picture>
-              <source
-                srcset="/images/webp/computer.webp"
-                media="(min-width: 700px)"
-                type="image/webp"
-              />
-              <img src="/images/jpg/computer-small.jpg" alt="computer" />
-            </picture>
-          </div>
-
-          <div class="content-wrapper">
-            <header>
-              <h2>Hello World</h2>
-            </header>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit.
-            </p>
-            <footer>
-              <h3>By Joe Smith</h3>
-              <a href="#"> 42 comments</a>
-            </footer>
-          </div>
-        </article>
-
-        <article>
-          <div class="content-wrapper">
-            <header>
-              <h2>Hello World</h2>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <footer>
-              <h3>By Joe Smith</h3>
-              <a href="#"> 42 comments</a>
-            </footer>
-          </div>
-        </article>
-
-        <article>
-          <div class="content-wrapper">
-            <header>
-              <h2>Hello World</h2>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <footer>
-              <h3>By Joe Smith</h3>
-              <a href="#"> 42 comments</a>
-            </footer>
-          </div>
-        </article>
-
-        <article>
-          <div class="content-wrapper">
-            <header>
-              <h2>Hello World</h2>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <footer>
-              <h3>By Joe Smith</h3>
-              <a href="#"> 42 comments</a>
-            </footer>
-          </div>
-        </article>
-
-        <article>
-          <div class="content-wrapper">
-            <header>
-              <h2>Hello World</h2>
-            </header>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <footer>
-              <h3>By Joe Smith</h3>
-              <a href="#"> 42 comments</a>
-            </footer>
-          </div>
-        </article>
-      </div>
-    </main>
+    <div class="layout layout-footer">
+      <footer class="footer">
+        <div class="footer__block footer__block--left">
+          <h5 class="footer__heading">Contacts on the left</h5>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">We're here</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">We're here</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">We're here</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--right">
+          <h5 class="footer__heading">Random links on the right</h5>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Please click this link</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Please click this link</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Please click this link</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link footer__list-link--important" href="#"
+                >Very important</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
