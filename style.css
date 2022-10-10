@@ -2,12 +2,12 @@
     box-sizing: border-box;
 }
 
-html, body{
+html, body {
     font-family: sans-serif;
     margin: 0;
 }
 
-.layout{
+.layout {
     display: grid;
     grid-template-columns: 1fr minmax(340px, 1200px) 1fr;
     padding: 0 20px;
@@ -20,66 +20,67 @@ html, body{
 
 .header,
 .main,
-.footer{
+.footer {
     grid-column: 2;
 }
 
 h1,
 h2,
 h3,
-p{
+p {
     text-align: center;
     margin: 0;
 }
 
-.header{
+.header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 50px;
 }
 
-.header__image{
+.header__image {
     grid-column: 2/3;
     height: 100%;
     object-fit: cover;
     text-align: center;
 }
 
-.header__navigation{
+.header__navigation {
     display: none;
 }
 
-.main{
+.main {
     display: grid;
     gap: 20px;
     padding: 40px 0;
 }
 
-.content{
+.content {
     display: grid;
     gap: 20px;
 }
 
-.article-list{
-    display: grid;
-    gap: 20px;
-    padding-bottom: 40px;
-}
-
-.article{
+.article {
     display: grid;
     grid-template-rows: 10em auto auto;
     gap: 20px;
 }
 
-.article__image{
+.article-list {
+    display: grid;
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+
+.article__image {
     height: 10em;
     width: 100%;
     object-fit: cover;
     object-position: 0 20%;
 }
 
-.article__heading{
+.article__heading {
     text-transform: uppercase;
 }
 
@@ -88,45 +89,45 @@ p{
     text-transform: uppercase;
 }
 
-.form{
+.form {
     display: grid;
     gap: 10px;
 }
 
-.form__input{
+.form__input {
     border: none;
     border-bottom: 1px solid black;
     outline: none;
-    padding: 10px;
+    padding-top: 8px;
 }
 
-.form__radio{
+.form__radio {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-flow: column;
 }
 
-.form__input-radio{
+.form__input-radio {
     display: block;
     margin: 5px auto;
 }
 
-.form__label-radio--right{
+.form__label-radio--right {
     grid-column: 5;
     text-align: center
 }
 
-.form__label-radio--left{
+.form__label-radio--left {
     grid-column: 2;
     text-align: center
 }
 
 
-.form__input::placeholder{
+.form__input::placeholder {
     font-size: 1em;
 }
 
-.form__button{
+.form__button {
     min-width: 30%;
     justify-self: center;
     padding: 10px 20px;
@@ -135,54 +136,58 @@ p{
     border: none;
 }
 
-.footer{
+.form__button:hover {
+    cursor: pointer;
+}
+
+.footer {
     padding: 20px 0 10px 0;
 }
 
-.footer__block{
+.footer__block {
     display: grid;
     grid-template-columns: 1fr;
     color: white;
 }
 
-.footer__list{
+.footer__list {
     padding: 0;
 }
 
-.footer__list-item{
+.footer__list-item {
     list-style: none;
 }
 
-.footer__list-link{
+.footer__list-link {
     text-decoration: none;
     color: white;
 }
 
-.footer__list-link--important{
+.footer__list-link--important {
     color: red;
 }
 
 @media screen and (min-width:801px) {
-    .header__navigation{
+    .header__navigation {
         display: block;
         grid-column: 3;
     }
 
-    .header__list{
+    .header__list {
         display: flex;
         justify-content: space-between;
     }
 
-    .header__list-item{
+    .header__list-item {
         list-style: none;
     }
 
-    .header__list-link{
+    .header__list-link {
         color: white;
         text-decoration: none;
     }
 
-    .header__image{
+    .header__image {
         grid-column: 1;
         height: 100%;
         object-fit: cover;
@@ -193,17 +198,17 @@ p{
         object-position:initial;
     }
 
-    .article-list{
+    .article-list {
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
     }
     
-    .form{
+    .form {
         min-width: 50%;
         justify-self: center;
     }
     
-    footer{
+    .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
