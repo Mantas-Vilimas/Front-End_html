@@ -102,7 +102,7 @@ main::after{
     bottom: 10%;
     right: 50%;
     transform: translateX(-50%);
-    transform: translateY(-5%);
+    transform: translateY(-10%);
 }
 
 div{
