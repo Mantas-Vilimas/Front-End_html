@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Best To Do App" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit-Tasks</title>
+    <link rel="icon" type="image/x-icon" href="/images/1553029_a_letter_red_alphabet_letters_icon.ico">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="layout">
+ <header class="header">
+        <nav class="header__navigation">
+          <h1 class="header__heading">
+            Best <span class="header__heading--color">ToDo</span> App
+          </h1>
+          <ul class="header__social-list">
+            <li class="header__list-item">
+              <a href="https://twitter.com/home" aria-label="Twitter">
+                <div
+                  class="header__social-icon header__social-icon--facebook"
+                ></div>
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="https://twitter.com/home" aria-label="Twitter">
+                <div
+                  class="header__social-icon header__social-icon--twitter"
+                ></div>
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="https://twitter.com/home" aria-label="Twitter">
+                <div
+                  class="header__social-icon header__social-icon--linkedin"
+                ></div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    <main class="tasks">
+      <form class="edit-form" action="/index.html" method="post">
+        <h2 class="edit-form__heading">Edit Task</h2>
+        <ul class="edit-form__list">
+          <li class="edit-form__list-item">
+            <label class="edit-form__label" for="id">Task ID</label>
+            <input
+              class="edit-form__input edit-form__input--static"
+              type="text"
+              name="id"
+              id="id"
+              minlength="5"
+              value="123456798"
+            />
+          </li>
+          <li class="edit-form__list-item">
+            <label class="edit-form__label" for="name">Name</label>
+            <input
+              class="edit-form__input"
+              type="text"
+              name="name"
+              id="name"
+              minlength="5"
+              required
+            />
+          </li>
+          <li class="edit-form__list-item">
+            <label class="edit-form__label" for="complete">Completed</label>
+            <input
+              class="edit-form__input"
+              type="checkbox"
+              name="complete"
+              id="complete"
+              required
+            />
+          </li>
+        </ul>
+        <input class="edit-form__button" type="submit" value="Edit" />
+        <span class="edit-form__error">there was an error</span>
+      </form>
+
+      <a class="back-button" href="/index.html">Back to tasks</a>
+    </main>
+    </div>
+  </body>
+</html>

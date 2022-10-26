@@ -1,0 +1,59 @@
+.tasks {
+    margin: 40px auto 0;
+    @extend %flex-center;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px;
+    padding: 0 10px;
+    grid-column: 2;
+    width: 100%;
+}
+ 
+.form {
+    width: 100%;
+    background-color: $white-color;
+    padding: 20px 40px;
+    flex: 1;
+    box-shadow: $box-shadow;
+    border-radius: $main-brd-radius;
+}
+
+.form__heading {
+    text-align: center;
+}
+
+.form{
+    &__input{
+        outline: none;
+        padding: 6px;
+        background-color: $grey-color;
+        border: $border1 solid lightgray;
+        border-radius: 5px 0 0 5px;
+        flex: 1;
+        flex-basis: 70%;
+    }
+
+    &__button{
+        outline: none;
+        padding: 6px;
+        background-color: $purple-color;
+        border: $border1 solid $purple-color;
+        color: $white-color;
+        border-radius: 0 5px 5px 0;
+        flex: 1;
+        flex-basis: 30%;
+        cursor: pointer;
+    }
+
+    &__error{
+    color: $invalid-color;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 500;  
+    }
+}
+
+.form__input-list{
+    display: flex;
+    margin-bottom: 8px;
+}

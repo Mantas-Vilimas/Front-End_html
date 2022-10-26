@@ -2,34 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Best To Do App" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transition</title>
+    <title>Tasks</title>
+    <link rel="icon" type="image/x-icon" href="/images/1553029_a_letter_red_alphabet_letters_icon.ico">
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <article class="loader">
-      <div></div>
-    </article>
+    <div class="layout">
+      <header class="header">
+        <nav class="header__navigation">
+          <h1 class="header__heading">
+            Best <span class="header__heading--color">ToDo</span> App
+          </h1>
+          <ul class="header__social-list">
+            <li class="header__list-item">
+              <a href="https://twitter.com/home" aria-label="Twitter">
+                <div
+                  class="header__social-icon header__social-icon--facebook"
+                ></div>
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="https://twitter.com/home" aria-label="Twitter">
+                <div
+                  class="header__social-icon header__social-icon--twitter"
+                ></div>
+              </a>
+            </li>
+            <li class="header__list-item">
+              <a href="https://twitter.com/home" aria-label="Twitter">
+                <div
+                  class="header__social-icon header__social-icon--linkedin"
+                ></div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <article class="fold">
-      <img
-        src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=696&q=80"
-        alt=""
-      />
-    </article>
+      <main class="tasks">
+        <form class="form" action="/#" method="post">
+          <h2 class="form__heading">Your tasks</h2>
+          <div class="form__input-list">
+            <input
+              class="form__input"
+              type="text"
+              name="tasks"
+              placeholder="e.g wash dishes"
+              minlength="5"
+              required
+            />
+            <input class="form__button" type="submit" value="Add" />
+          </div>
 
-    <article class="text">
-      <span class="underline"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure similique
-        voluptates libero aspernatur iusto beatae eaque! Temporibus quas ullam
-        consequatur veniam? Rem consequuntur blanditiis officiis aperiam iusto,
-        saepe aut hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Consequatur rerum vel sed nihil praesentium officiis modi voluptatibus
-        officia iusto inventore. Ipsa cumque temporibus iste laboriosam quae
-        sint impedit cupiditate veritatis.</span
-      >
-    </article>
+          <span class="form__error">there was an error</span>
+        </form>
+
+        <ol class="task-list">
+          <li class="task">
+            <div class="task__done task__done--none"></div>
+
+            <h3 class="task__description">take out trashes</h3>
+
+            <div class="task__modifiers">
+              <a class="task__links" href="/index2.html" aria-label="Twitter"
+                ><div class="task__modifiers--edit"></div
+              ></a>
+              <a href="https://twitter.com/home" aria-label="Twitter"
+                ><div class="task__modifiers--delete"></div
+              ></a>
+            </div>
+          </li>
+
+          <li class="task">
+            <div class="task__done"></div>
+
+            <h3 class="task__description task__description--done">
+              walk the dog
+            </h3>
+
+            <div class="task__modifiers">
+              <a href="/index2.html" aria-label="Twitter"
+                ><div class="task__modifiers--edit"></div
+              ></a>
+              <a href="https://twitter.com/home" aria-label="Twitter"
+                ><div class="task__modifiers--delete"></div
+              ></a>
+            </div>
+          </li>
+        </ol>
+      </main>
+    </div>
   </body>
 </html>

@@ -1,0 +1,60 @@
+.task-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.task {
+   @extend %task;
+}
+
+
+.task__description{
+    text-transform: capitalize;
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.task__modifiers {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.task__modifiers--edit{
+    height: 15px;
+    width: 15px;
+    mask: url(/images/assets/pen-to-square-regular.svg) no-repeat center / contain;
+    -webkit-mask: url(/images/assets/pen-to-square-regular.svg) no-repeat center / contain;
+    background-color: green;
+}
+
+.task__modifiers--delete{
+    height: 15px;
+    width: 15px;
+    mask: url(/images/assets/trash-solid.svg) no-repeat center / contain;
+    -webkit-mask: url(/images/assets/trash-solid.svg) no-repeat center / contain;
+    background-color: red;
+}
+
+.task__done{
+    height: 15px;
+    width: 15px;
+    mask: url(/images/assets/circle-check-regular.svg) no-repeat center / contain;
+    -webkit-mask: url(/images/assets/circle-check-regular.svg) no-repeat center / contain;
+    background-color: green;
+}
+
+.task__done--none{
+    background-color: transparent;
+}
+
+.task__description--done {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+
+}
